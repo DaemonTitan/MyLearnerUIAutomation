@@ -22,10 +22,10 @@ class OnboardingScreen: BaseScreen {
     }
     
     enum Buttons {
-        
+        static let skipButton = app.buttons["Skip"]
     }
     
-
+    
     
     
 }

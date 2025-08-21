@@ -1,0 +1,6 @@
+strings:
+   inputs: MyLearner/Resources/en.lproj/Localizable.strings
+   filter: .+\.strings$
+   outputs:
+     - templateName: structured-swift5
+       output: MyLearner/Resources/Strings+Generated.swift
