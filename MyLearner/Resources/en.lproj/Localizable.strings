@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MyLearner
+
+  Created by Tony Chen on 21/8/2025.
+  
+*/
+
+"boundleId.appStore" = "com.apple.AppStore";
+"boundleId.springBoard" = "com.apple.springboard";
+"boundleId.mylearner" = "au.gov.vic.vicroads.dlk";
+
+"onboarding.hi" = "Hi!";
+"onboarding.screen1" = "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.";
+"onboarding.skip" = "Skip";
