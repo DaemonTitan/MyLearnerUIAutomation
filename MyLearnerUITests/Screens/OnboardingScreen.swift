@@ -16,13 +16,13 @@ class OnboardingScreen: BaseScreen {
     }
     
     enum Labels {
-        static let hi = app.staticTexts["Hi!"]
-        static let appInfo = app.staticTexts["myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do."]
+        static let hi = myLearnerApp.staticTexts["Hi!"]
+        static let appInfo = myLearnerApp.staticTexts["myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do."]
 
     }
     
     enum Buttons {
-        static let skipButton = app.buttons["Skip"]
+        static let skipButton = myLearnerApp.buttons["Skip"]
     }
     
     
