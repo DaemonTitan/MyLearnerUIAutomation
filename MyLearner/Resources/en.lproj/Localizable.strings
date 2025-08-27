@@ -6,10 +6,33 @@
   
 */
 
+// Boundle Ids
 "boundleId.appStore" = "com.apple.AppStore";
 "boundleId.springBoard" = "com.apple.springboard";
 "boundleId.mylearner" = "au.gov.vic.vicroads.dlk";
 
+// App Store
+"appStore.searchButton" = "Search";
+"appStore.searchField" = "AppStore.searchField";
+"appStore.enterTextMyLearners" = "myLearners";
+"appStore.pressKey" = "search";
+"appStore.appButton" = "myLearners, VicRoads Official Learning App";
+"appStore.getButton" = "Get";
+"appStore.redownloadButton" = "re-download";
+"appStore.openButton" = "Open";
+
+// Springboard
+"springboard.appIcon" = "myLearners";
+"springboard.removeAppButton" = "Remove App";
+"springboard.deleteAppButton" = "Delete App";
+"springboard.confirmDeleteButton" = "Delete";
+
+
 "onboarding.hi" = "Hi!";
 "onboarding.screen1" = "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.";
 "onboarding.skip" = "Skip";
+
+
+// Messages
+"messages.cantLocateApp" = "Can't locate app in App Store";
+"messages.buttonNotFound" = "Button not found";

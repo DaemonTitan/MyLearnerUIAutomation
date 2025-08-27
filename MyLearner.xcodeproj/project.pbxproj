@@ -29,9 +29,22 @@
 		F3CEDDBC2E559539002670EC /* MyLearnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLearnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F3F96F972E5D4A55006733F6 /* Exceptions for "MyLearner" folder in "MyLearnerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Resources/Strings+Generated.swift",
+			);
+			target = F3CEDDBB2E559539002670EC /* MyLearnerUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F3CEDDA72E559537002670EC /* MyLearner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F3F96F972E5D4A55006733F6 /* Exceptions for "MyLearner" folder in "MyLearnerUITests" target */,
+			);
 			path = MyLearner;
 			sourceTree = "<group>";
 		};
