@@ -46,12 +46,64 @@ internal enum L10n {
     internal static let cantLocateApp = L10n.tr("Localizable", "messages.cantLocateApp", fallback: "Can't locate app in App Store")
   }
   internal enum Onboarding {
-    /// Hi!
-    internal static let hi = L10n.tr("Localizable", "onboarding.hi", fallback: "Hi!")
-    /// myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.
-    internal static let screen1 = L10n.tr("Localizable", "onboarding.screen1", fallback: "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.")
+    /// Done
+    internal static let doneButton = L10n.tr("Localizable", "onboarding.doneButton", fallback: "Done")
+    /// page %d of 5
+    internal static func pageIndicator(_ p1: Int) -> String {
+      return L10n.tr("Localizable", "onboarding.pageIndicator", p1, fallback: "page %d of 5")
+    }
     /// Skip
-    internal static let skip = L10n.tr("Localizable", "onboarding.skip", fallback: "Skip")
+    internal static let skipButton = L10n.tr("Localizable", "onboarding.skipButton", fallback: "Skip")
+    internal enum Screen1 {
+      /// myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.
+      internal static let appintroduction = L10n.tr("Localizable", "onboarding.screen1.appintroduction", fallback: "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.")
+      /// Hi!
+      internal static let hi = L10n.tr("Localizable", "onboarding.screen1.hi", fallback: "Hi!")
+      /// vicRoadsLogoRgb
+      internal static let vicRoadsLogoimage = L10n.tr("Localizable", "onboarding.screen1.vicRoadsLogoimage", fallback: "vicRoadsLogoRgb")
+      /// welcomeIcon
+      internal static let welcomeIcon = L10n.tr("Localizable", "onboarding.screen1.welcomeIcon", fallback: "welcomeIcon")
+    }
+    internal enum Screen2 {
+      /// learningOnboarding
+      internal static let learningOnboardingImage = L10n.tr("Localizable", "onboarding.screen2.learningOnboardingImage", fallback: "learningOnboarding")
+      /// Log hours
+      internal static let logHours = L10n.tr("Localizable", "onboarding.screen2.logHours", fallback: "Log hours")
+      /// phoneOne
+      internal static let phoneOneIcon = L10n.tr("Localizable", "onboarding.screen2.phoneOneIcon", fallback: "phoneOne")
+      /// Record your drives and send them to your supervisor.
+      internal static let recordDrivers = L10n.tr("Localizable", "onboarding.screen2.recordDrivers", fallback: "Record your drives and send them to your supervisor.")
+    }
+    internal enum Screen3 {
+      /// Approve drives
+      internal static let approveDrives = L10n.tr("Localizable", "onboarding.screen3.approveDrives", fallback: "Approve drives")
+      /// phoneTwo
+      internal static let phoneTwo = L10n.tr("Localizable", "onboarding.screen3.phoneTwo", fallback: "phoneTwo")
+      /// Review your learner's drives and verify them.
+      internal static let reviewLearner = L10n.tr("Localizable", "onboarding.screen3.reviewLearner", fallback: "Review your learner's drives and verify them.")
+      /// userLearnerOnboarding
+      internal static let userLearnerOnboardingImage = L10n.tr("Localizable", "onboarding.screen3.userLearnerOnboardingImage", fallback: "userLearnerOnboarding")
+    }
+    internal enum Screen4 {
+      /// phoneThree
+      internal static let phoneThree = L10n.tr("Localizable", "onboarding.screen4.phoneThree", fallback: "phoneThree")
+      /// See your drive progress, hours and more.
+      internal static let seeDriveProgress = L10n.tr("Localizable", "onboarding.screen4.seeDriveProgress", fallback: "See your drive progress, hours and more.")
+      /// Track progress
+      internal static let trackProgress = L10n.tr("Localizable", "onboarding.screen4.trackProgress", fallback: "Track progress")
+      /// userSupervisorOnboarding
+      internal static let userSupervisorOnboardingImage = L10n.tr("Localizable", "onboarding.screen4.userSupervisorOnboardingImage", fallback: "userSupervisorOnboarding")
+    }
+    internal enum Screen5 {
+      /// Get road safety tips, updates on your drives and learn more when you want.
+      internal static let getRoadSafetyTips = L10n.tr("Localizable", "onboarding.screen5.getRoadSafetyTips", fallback: "Get road safety tips, updates on your drives and learn more when you want.")
+      /// Learn together
+      internal static let learnTogether = L10n.tr("Localizable", "onboarding.screen5.learnTogether", fallback: "Learn together")
+      /// phoneSix
+      internal static let phoneSix = L10n.tr("Localizable", "onboarding.screen5.phoneSix", fallback: "phoneSix")
+      /// userLearnerOnboarding
+      internal static let userLearnerOnboardingImage = L10n.tr("Localizable", "onboarding.screen5.userLearnerOnboardingImage", fallback: "userLearnerOnboarding")
+    }
   }
   internal enum Springboard {
     /// myLearners

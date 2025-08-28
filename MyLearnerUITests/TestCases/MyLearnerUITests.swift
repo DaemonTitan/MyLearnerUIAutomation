@@ -8,6 +8,8 @@
 import XCTest
 
 final class MyLearnerUITests: BaseTest {
+    
+    let onboardingSteps = OnboardingSteps()
 
     @MainActor
         func testLaunch() throws {
@@ -35,12 +37,7 @@ final class MyLearnerUITests: BaseTest {
             
             XCTAssert(open.waitForExistence(timeout: 2000))
             open.tap()
-            
-            
-            
-                
             }
-        
         
         func testDeleteApp() {
             
@@ -68,25 +65,22 @@ final class MyLearnerUITests: BaseTest {
             let pageIndicator = myLearnerApp.pageIndicators.firstMatch
 //            XCTAssertEqual(pageIndicator.value as? String, "page 1 of 5", "Incorrect page indicator")
 //
-//            myLearnerApp.swipeLeft()
+//            pageIndicator.swipeLeft()
 //
 //            XCTAssertEqual(pageIndicator.value as? String, "page 2 of 5", "Incorrect page indicator")
             
-//            for currentPage in 1...5 {
-//                XCTAssertEqual(pageIndicator.value as? String, L10n.Onboarding.pageIndicator(currentPage), "Incorrent page indocator" )
-//                
-//                if currentPage < 5 {
-//                    myLearnerApp.swipeLeft()
-//                }
-//            }
+            
+            
+            for currentPage in 1...5 {
+                
+                XCTAssertEqual(pageIndicator.value as? String, L10n.Onboarding.pageIndicator(currentPage), "Incorrent page indocator" )
+                
+                if currentPage < 5 {
+                    myLearnerApp.swipeLeft()
+                }
+            }
 //            myLearnerApp.buttons["Skip"].firstMatch.tap()
 //            XCTAssert(myLearnerApp.staticTexts["Hi!"].waitForExistence(timeout: 2), "Text is visible")
-            
-        }
-    
-        @MainActor
-        func testOnboardingScreen() {
-            
             
         }
 

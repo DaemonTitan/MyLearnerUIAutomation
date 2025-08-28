@@ -27,12 +27,43 @@
 "springboard.deleteAppButton" = "Delete App";
 "springboard.confirmDeleteButton" = "Delete";
 
-
-"onboarding.hi" = "Hi!";
-"onboarding.screen1" = "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.";
-"onboarding.skip" = "Skip";
-
-
 // Messages
 "messages.cantLocateApp" = "Can't locate app in App Store";
 "messages.buttonNotFound" = "Button not found";
+
+// Onboarding Screen 1
+"onboarding.screen1.vicRoadsLogoimage" = "vicRoadsLogoRgb";
+"onboarding.screen1.welcomeIcon" = "welcomeIcon";
+"onboarding.screen1.hi" = "Hi!";
+"onboarding.screen1.appintroduction" = "myLearners is an app for Victorian learner and supervising drivers. Let's look at what you can do.";
+
+// Onboarding Screen 2
+"onboarding.screen2.learningOnboardingImage" = "learningOnboarding";
+"onboarding.screen2.phoneOneIcon" = "phoneOne";
+"onboarding.screen2.logHours" = "Log hours";
+"onboarding.screen2.recordDrivers" = "Record your drives and send them to your supervisor.";
+
+// Onboarding Screen 3
+"onboarding.screen3.userLearnerOnboardingImage" = "userLearnerOnboarding";
+"onboarding.screen3.phoneTwo" = "phoneTwo";
+"onboarding.screen3.approveDrives" = "Approve drives";
+"onboarding.screen3.reviewLearner" = "Review your learner's drives and verify them.";
+
+// Onboarding Screen 4
+"onboarding.screen4.userSupervisorOnboardingImage" = "userSupervisorOnboarding";
+"onboarding.screen4.phoneThree" = "phoneThree";
+"onboarding.screen4.trackProgress" = "Track progress";
+"onboarding.screen4.seeDriveProgress" = "See your drive progress, hours and more.";
+
+// Onboarding Screen 5
+"onboarding.screen5.userLearnerOnboardingImage" = "userLearnerOnboarding";
+"onboarding.screen5.phoneSix" = "phoneSix";
+"onboarding.screen5.learnTogether" = "Learn together";
+"onboarding.screen5.getRoadSafetyTips" = "Get road safety tips, updates on your drives and learn more when you want.";
+
+// Onboarding Buttons
+"onboarding.skipButton" = "Skip";
+"onboarding.doneButton" = "Done";
+
+// Onboarding Page Indicators
+"onboarding.pageIndicator" = "page %d of 5";

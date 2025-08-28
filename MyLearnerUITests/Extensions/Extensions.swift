@@ -11,7 +11,11 @@ import XCTest
 extension XCUIElement {
     
     func labelContents(_ text: String) {
-        XCTAssertEqual(text, self.label, "\(self.label) shows incorrect Label: \(text)")
+        XCTAssertEqual(text, self.label, "\(self.label) doesn't match give text: \(text)")
+    }
+    
+    func textMatches(_ text: String) {
+        XCTAssertEqual(self.value as? String, text, "Page indicator value '\(self.description)' doesn't match give text '\(text)'")
     }
     
     func isVisible() {
@@ -27,7 +31,6 @@ extension XCUIElement {
             return
         }
     }
-    
     
     func clearAndEnterText(_ text: String) {
         guard let stringValue = self.value as? String else {
@@ -49,11 +52,11 @@ extension XCUIElement {
         self.tap()
     }
     
-    func swipeLeft(_ element: XCUIElement) {
-        guard element.waitForExistence(timeout: BaseScreen.visibleTimeOut) else {
-            return XCTFail("\(element.description) element is not visible and swip left fails")
+    func swipToLeft() {
+        guard self.waitForExistence(timeout: BaseScreen.visibleTimeOut) else {
+            return XCTFail("\(self.description) element is not visible and swip left fails")
         }
-        element.swipeLeft()
+        self.swipeLeft()
     }
     
     func scrollUp(_ element: XCUIElement) {
