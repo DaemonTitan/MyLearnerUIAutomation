@@ -3,7 +3,7 @@
 This repository contains a UI test automation framework for MyLearners iOS app, built with XCUITest in Swift, without access to or reliance on app's sources code.
 
 ## Overview
-This project was build as a learning exercise to explore UI test automation for iOS using XCUITest framework with swift.
+This project was build as a learning and practise project to explore UI test automation for iOS using XCUITest framework with swift.
 
 
 ## Features
