@@ -83,5 +83,23 @@ final class MyLearnerUITests: BaseTest {
 //            XCTAssert(myLearnerApp.staticTexts["Hi!"].waitForExistence(timeout: 2), "Text is visible")
             
         }
+    
+    func test1() {
+        let myLearnerApp = XCUIApplication(bundleIdentifier: "au.gov.vic.vicroads.dlk")
+        myLearnerApp.launch()
+        
+        let button = myLearnerApp.buttons["Terms & Conditions and Privacy Statement"]
+        
+        button.tap()
+        
+        let web = myLearnerApp.staticTexts["myLearners terms and conditions"]
+        
+        XCTAssertTrue(web.waitForExistence(timeout: 2.1))
+        
+        let doneButton = myLearnerApp.buttons["Done"]
+        
+        doneButton.tap()
+        
+    }
 
 }

@@ -11,11 +11,15 @@ import XCTest
 extension XCUIElement {
     
     func labelContents(_ text: String) {
-        XCTAssertEqual(text, self.label, "\(self.label) doesn't match give text: \(text)")
+        XCTAssertEqual(self.label, text, "\(self.label) doesn't match give text: \(text)")
     }
     
-    func textMatches(_ text: String) {
-        XCTAssertEqual(self.value as? String, text, "Page indicator value '\(self.description)' doesn't match give text '\(text)'")
+//    func textMatches(_ text: String) {
+//        XCTAssertEqual(self.value as? String, text, "Page indicator value '\(self.description)' doesn't match give text '\(text)'")
+//    }
+    
+    func textMatches(_ actual: @autoclosure () -> String?,  expected: String) {
+        XCTAssertEqual(actual() ?? "", expected, "\(self) doesn't match give text: \(expected)")
     }
     
     func isVisible() {

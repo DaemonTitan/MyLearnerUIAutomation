@@ -62,7 +62,8 @@ class OnboardingScreen: BaseScreen {
         pageIndicator.isVisible()
 
         for currentPage in initalPage...totalPage {
-            pageIndicator.textMatches(L10n.Onboarding.pageIndicator(currentPage))
+            //pageIndicator.textMatches(L10n.Onboarding.pageIndicator(currentPage))
+            pageIndicator.textMatches(pageIndicator.value as? String, expected: L10n.Onboarding.pageIndicator(currentPage))
 
             if currentPage < totalPage {
                 pageIndicator.swipeLeft()

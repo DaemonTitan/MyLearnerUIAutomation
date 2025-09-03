@@ -67,3 +67,33 @@
 
 // Onboarding Page Indicators
 "onboarding.pageIndicator" = "page %d of 5";
+
+// Login Screen
+"login.backgoundImage" = "landingIllustrationBackground";
+"login.myLearnersText" = "myLearners";
+
+"login.carLPlateImage" = "graphicCarLplate";
+"login.emailTextField" = "Email address";
+"login.passwordField" = "Password";
+
+"login.hiText" = "Hi!";
+"login.loginInstructionText" = "Log in with your myVicRoads personal account";
+"login.agreeToVicRoadsText" = "By tapping Log in, I agree to VicRoads";
+"login.dontHaveAccountText" = "Don't have a myVicRoads account?";
+
+"login.emptyEmailErrorText" = "You must enter an email.";
+"login.emptyPasswordErrorText" = "You must enter a password";
+"login.incorrectEmailPasswordText" = "Incorrect email or password. Please try again.";
+
+"login.loginButton" = "Log in";
+"login.forgotPasswordButton" = "Forgot your password?";
+"login.termAndConditionButton" = "Terms & Conditions and Privacy Statement";
+"login.signUpButton" = "Sign up";
+"login.doneButton" = "Done";
+
+"login.termAndConditionWeb" = "myLearners terms and conditions";
+"login.signUpMylearnersWeb" = "Sign up for myVicRoads and myLearners";
+
+
+
+//"login." = "";

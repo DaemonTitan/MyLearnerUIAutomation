@@ -15,12 +15,16 @@ class BaseTest: XCTestCase {
     
     override func setUpWithError() throws {
         continueAfterFailure = false
-        installApp.searchAppFromAppStore()
-        installApp.downloadApp()
-        installApp.openApp()
+        
+        let myLearnerApp = XCUIApplication(bundleIdentifier: "au.gov.vic.vicroads.dlk")
+        myLearnerApp.launch()
+        
+//        installApp.searchAppFromAppStore()
+//        installApp.downloadApp()
+//        installApp.openApp()
     }
     
     override func tearDownWithError() throws {
-        deleteApp.deleteAppFromSpringboard()
+        //deleteApp.deleteAppFromSpringboard()
     }
 }
