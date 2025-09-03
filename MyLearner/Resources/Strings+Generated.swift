@@ -39,6 +39,46 @@ internal enum L10n {
     /// com.apple.springboard
     internal static let springBoard = L10n.tr("Localizable", "boundleId.springBoard", fallback: "com.apple.springboard")
   }
+  internal enum Login {
+    /// By tapping Log in, I agree to VicRoads
+    internal static let agreeToVicRoadsText = L10n.tr("Localizable", "login.agreeToVicRoadsText", fallback: "By tapping Log in, I agree to VicRoads")
+    /// landingIllustrationBackground
+    internal static let backgoundImage = L10n.tr("Localizable", "login.backgoundImage", fallback: "landingIllustrationBackground")
+    /// graphicCarLplate
+    internal static let carLPlateImage = L10n.tr("Localizable", "login.carLPlateImage", fallback: "graphicCarLplate")
+    /// Done
+    internal static let doneButton = L10n.tr("Localizable", "login.doneButton", fallback: "Done")
+    /// Don't have a myVicRoads account?
+    internal static let dontHaveAccountText = L10n.tr("Localizable", "login.dontHaveAccountText", fallback: "Don't have a myVicRoads account?")
+    /// Email address
+    internal static let emailTextField = L10n.tr("Localizable", "login.emailTextField", fallback: "Email address")
+    /// You must enter an email.
+    internal static let emptyEmailErrorText = L10n.tr("Localizable", "login.emptyEmailErrorText", fallback: "You must enter an email.")
+    /// You must enter a password
+    internal static let emptyPasswordErrorText = L10n.tr("Localizable", "login.emptyPasswordErrorText", fallback: "You must enter a password")
+    /// Forgot your password?
+    internal static let forgotPasswordButton = L10n.tr("Localizable", "login.forgotPasswordButton", fallback: "Forgot your password?")
+    /// Hi!
+    internal static let hiText = L10n.tr("Localizable", "login.hiText", fallback: "Hi!")
+    /// Incorrect email or password. Please try again.
+    internal static let incorrectEmailPasswordText = L10n.tr("Localizable", "login.incorrectEmailPasswordText", fallback: "Incorrect email or password. Please try again.")
+    /// Log in
+    internal static let loginButton = L10n.tr("Localizable", "login.loginButton", fallback: "Log in")
+    /// Log in with your myVicRoads personal account
+    internal static let loginInstructionText = L10n.tr("Localizable", "login.loginInstructionText", fallback: "Log in with your myVicRoads personal account")
+    /// myLearners
+    internal static let myLearnersText = L10n.tr("Localizable", "login.myLearnersText", fallback: "myLearners")
+    /// Password
+    internal static let passwordField = L10n.tr("Localizable", "login.passwordField", fallback: "Password")
+    /// Sign up
+    internal static let signUpButton = L10n.tr("Localizable", "login.signUpButton", fallback: "Sign up")
+    /// Sign up for myVicRoads and myLearners
+    internal static let signUpMylearnersWeb = L10n.tr("Localizable", "login.signUpMylearnersWeb", fallback: "Sign up for myVicRoads and myLearners")
+    /// Terms & Conditions and Privacy Statement
+    internal static let termAndConditionButton = L10n.tr("Localizable", "login.termAndConditionButton", fallback: "Terms & Conditions and Privacy Statement")
+    /// myLearners terms and conditions
+    internal static let termAndConditionWeb = L10n.tr("Localizable", "login.termAndConditionWeb", fallback: "myLearners terms and conditions")
+  }
   internal enum Messages {
     /// Button not found
     internal static let buttonNotFound = L10n.tr("Localizable", "messages.buttonNotFound", fallback: "Button not found")
