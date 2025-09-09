@@ -71,29 +71,38 @@
 // Login Screen
 "login.backgoundImage" = "landingIllustrationBackground";
 "login.myLearnersText" = "myLearners";
-
 "login.carLPlateImage" = "graphicCarLplate";
 "login.emailTextField" = "Email address";
 "login.passwordField" = "Password";
-
 "login.hiText" = "Hi!";
 "login.loginInstructionText" = "Log in with your myVicRoads personal account";
 "login.agreeToVicRoadsText" = "By tapping Log in, I agree to VicRoads";
 "login.dontHaveAccountText" = "Don't have a myVicRoads account?";
-
 "login.emptyEmailErrorText" = "You must enter an email.";
 "login.emptyPasswordErrorText" = "You must enter a password";
 "login.incorrectEmailPasswordText" = "Incorrect email or password. Please try again.";
-
 "login.loginButton" = "Log in";
 "login.forgotPasswordButton" = "Forgot your password?";
 "login.termAndConditionButton" = "Terms & Conditions and Privacy Statement";
 "login.signUpButton" = "Sign up";
 "login.doneButton" = "Done";
-
 "login.termAndConditionWeb" = "myLearners terms and conditions";
 "login.signUpMylearnersWeb" = "Sign up for myVicRoads and myLearners";
 
+// Pin Screen
+"pin.mylearnerLabel" = "myLearners";
+"pin.setupPinLabel" = "Setup PIN";
+"pin.pinIndicator" = "Hi %@ Enter your 6-digit PIN";
+"pin.createPinMessage" = "Create your 6-digit PIN";
+"pin.confirmPinMessage" = "Confirm your 6-digit PIN";
+"pin.passcodeImage" = "passcode";
+"pin.SignOutButton" = "logout";
+"pin.forgotButton" = "Forgot?";
+"pin.deleteButton" = "backspace";
+"pin.incorrentPinMessage" = "Your PIN doesn't look right. Let's try that again.";
+"pin.alertTitle" = "Forgot your PIN?";
+"pin.alertBody" = "We'll log you out. When you log back in, you can create a new PIN.";
+"pin.cancelButton" = "Cancel";
+"pin.alertLogoutButton" = "Log out";
 
-
-//"login." = "";
+//"." = "";

@@ -145,6 +145,38 @@ internal enum L10n {
       internal static let userLearnerOnboardingImage = L10n.tr("Localizable", "onboarding.screen5.userLearnerOnboardingImage", fallback: "userLearnerOnboarding")
     }
   }
+  internal enum Pin {
+    /// We'll log you out. When you log back in, you can create a new PIN.
+    internal static let alertBody = L10n.tr("Localizable", "pin.alertBody", fallback: "We'll log you out. When you log back in, you can create a new PIN.")
+    /// Log out
+    internal static let alertLogoutButton = L10n.tr("Localizable", "pin.alertLogoutButton", fallback: "Log out")
+    /// Forgot your PIN?
+    internal static let alertTitle = L10n.tr("Localizable", "pin.alertTitle", fallback: "Forgot your PIN?")
+    /// Cancel
+    internal static let cancelButton = L10n.tr("Localizable", "pin.cancelButton", fallback: "Cancel")
+    /// Confirm your 6-digit PIN
+    internal static let confirmPinMessage = L10n.tr("Localizable", "pin.confirmPinMessage", fallback: "Confirm your 6-digit PIN")
+    /// Create your 6-digit PIN
+    internal static let createPinMessage = L10n.tr("Localizable", "pin.createPinMessage", fallback: "Create your 6-digit PIN")
+    /// backspace
+    internal static let deleteButton = L10n.tr("Localizable", "pin.deleteButton", fallback: "backspace")
+    /// Forgot?
+    internal static let forgotButton = L10n.tr("Localizable", "pin.forgotButton", fallback: "Forgot?")
+    /// Your PIN doesn't look right. Let's try that again.
+    internal static let incorrentPinMessage = L10n.tr("Localizable", "pin.incorrentPinMessage", fallback: "Your PIN doesn't look right. Let's try that again.")
+    /// myLearners
+    internal static let mylearnerLabel = L10n.tr("Localizable", "pin.mylearnerLabel", fallback: "myLearners")
+    /// passcode
+    internal static let passcodeImage = L10n.tr("Localizable", "pin.passcodeImage", fallback: "passcode")
+    /// Hi %@ Enter your 6-digit PIN
+    internal static func pinIndicator(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "pin.pinIndicator", String(describing: p1), fallback: "Hi %@ Enter your 6-digit PIN")
+    }
+    /// Setup PIN
+    internal static let setupPinLabel = L10n.tr("Localizable", "pin.setupPinLabel", fallback: "Setup PIN")
+    /// logout
+    internal static let signOutButton = L10n.tr("Localizable", "pin.SignOutButton", fallback: "logout")
+  }
   internal enum Springboard {
     /// myLearners
     internal static let appIcon = L10n.tr("Localizable", "springboard.appIcon", fallback: "myLearners")

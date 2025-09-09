@@ -85,7 +85,6 @@ class OnboardingScreen: BaseScreen {
     }
     
     func tapOnDoneButton() {
-        Buttons.doneButton.isVisible()
         Buttons.doneButton.tap()
     }
     
