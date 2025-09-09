@@ -9,32 +9,16 @@ import Foundation
 import XCTest
 
 
-class LoginSignUpTest: BaseTest {
+class LoginSignUpTest: XCTestCase {
     
     let userAccount = Users()
     let loginSteps = LoginSteps()
     let pinSteps = PinSteps()
+    let baseTest = BaseTest()
     
     override func setUpWithError() throws {
-        let myLearnerApp = XCUIApplication(bundleIdentifier: "au.gov.vic.vicroads.dlk")
-        myLearnerApp.launch()
-    }
-    
-    func test_Login_With_Supervisor() {
-        loginSteps.assertImages()
-        loginSteps.assertLabelsAndTexts()
-        loginSteps.enterUserName(email: userAccount.supervisor.userName)
-        loginSteps.enterPassword(password: userAccount.supervisor.password)
-        loginSteps.tapOnLoginButton()
-        pinSteps.assertCreatePinTextAndImage()
-        pinSteps.assertNumberPad()
-        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
-        pinSteps.tapOnDeleteButton(digits: 5)
-        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
-        pinSteps.assertConfirmPinTextAndImage()
-        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
-        pinSteps.tapOnDeleteButton(digits: 5)
-        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+        continueAfterFailure = false
+        baseTest.myLearnerApp.launch()
     }
     
     func test_Login_Without_Email_And_Password() {
@@ -82,5 +66,20 @@ class LoginSignUpTest: BaseTest {
         loginSteps.assertLabelsAndTexts()
     }
     
-
+    func test_yLogin_With_Supervisor_Have_Successful_Login() {
+        loginSteps.assertImages()
+        loginSteps.assertLabelsAndTexts()
+        loginSteps.enterUserName(email: userAccount.supervisor.userName)
+        loginSteps.enterPassword(password: userAccount.supervisor.password)
+        loginSteps.tapOnLoginButton()
+        pinSteps.assertCreatePinTextAndImage()
+        pinSteps.assertNumberPad()
+        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
+        pinSteps.tapOnDeleteButton(digits: 5)
+        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+        pinSteps.assertConfirmPinTextAndImage()
+        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
+        pinSteps.tapOnDeleteButton(digits: 5)
+        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+    }
 }

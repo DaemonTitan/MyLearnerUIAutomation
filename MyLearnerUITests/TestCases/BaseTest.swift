@@ -8,19 +8,6 @@
 import Foundation
 import XCTest
 
-class BaseTest: XCTestCase {
-    
-    let installApp = AppManager(BaseScreen.appStore)
-    let deleteApp = DeleteApp(BaseScreen.springboard)
-    
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-//        installApp.searchAppFromAppStore()
-//        installApp.downloadApp()
-//        installApp.openApp()
-    }
-    
-    override func tearDownWithError() throws {
-        //deleteApp.deleteAppFromSpringboard()
-    }
+class BaseTest: BaseScreen {
+    let myLearnerApp = myLearnerApp
 }

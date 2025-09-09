@@ -54,8 +54,8 @@ internal enum L10n {
     internal static let emailTextField = L10n.tr("Localizable", "login.emailTextField", fallback: "Email address")
     /// You must enter an email.
     internal static let emptyEmailErrorText = L10n.tr("Localizable", "login.emptyEmailErrorText", fallback: "You must enter an email.")
-    /// You must enter a password
-    internal static let emptyPasswordErrorText = L10n.tr("Localizable", "login.emptyPasswordErrorText", fallback: "You must enter a password")
+    /// You must enter a password.
+    internal static let emptyPasswordErrorText = L10n.tr("Localizable", "login.emptyPasswordErrorText", fallback: "You must enter a password.")
     /// Forgot your password?
     internal static let forgotPasswordButton = L10n.tr("Localizable", "login.forgotPasswordButton", fallback: "Forgot your password?")
     /// Hi!

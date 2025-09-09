@@ -55,12 +55,13 @@ class OnboardingSteps {
         onboardingScreen.tapOnSkipButton()
     }
     
-    func tapOnDoneButton() {
+    func tapOnDoneButton() -> LoginSteps {
         onboardingScreen.isDoneButtonVisible()
         onboardingScreen.tapOnDoneButton()
+        return LoginSteps()
     }
     
-    func assertOnboardingScreen() {
+    func assertEachOnboardingScreen() {
         onboardingScreen.assertPagedScreens { page in
             switch page {
             case 1:
