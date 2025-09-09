@@ -84,5 +84,4 @@ class LoginSteps {
     func assertSignUpWebpage() {
         loginScreen.isSignUpTextVisible()
     }
-    
 }

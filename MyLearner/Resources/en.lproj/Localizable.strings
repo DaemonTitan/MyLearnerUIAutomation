@@ -79,7 +79,7 @@
 "login.agreeToVicRoadsText" = "By tapping Log in, I agree to VicRoads";
 "login.dontHaveAccountText" = "Don't have a myVicRoads account?";
 "login.emptyEmailErrorText" = "You must enter an email.";
-"login.emptyPasswordErrorText" = "You must enter a password";
+"login.emptyPasswordErrorText" = "You must enter a password.";
 "login.incorrectEmailPasswordText" = "Incorrect email or password. Please try again.";
 "login.loginButton" = "Log in";
 "login.forgotPasswordButton" = "Forgot your password?";
