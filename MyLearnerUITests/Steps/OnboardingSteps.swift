@@ -7,54 +7,61 @@
 
 import Foundation
 
-class OnboardingSteps: OnboardingScreen {
+class OnboardingSteps {
+    
+    let onboardingScreen = OnboardingScreen()
     
     // MARK: 1st Onboarding Screen
     func validateFirstOnboardingScreenElements() {
-        isWelcomeIconVisible()
-        isHiTextVisible()
-        isAppInfoTextVisible()
-        isSkipButtonVisible()
+        onboardingScreen.isWelcomeIconVisible()
+        onboardingScreen.isHiTextVisible()
+        onboardingScreen.isAppInfoTextVisible()
+        onboardingScreen.isSkipButtonVisible()
     }
     
     // MARK: 2nd Onboarding Screen
     func validateSecondOnboardingScreenElements() {
-        isLearningOnboardingImageVisible()
-        isPhoneOneIconVisible()
-        isLogHoursLabelVisible()
-        isRecordDriversVisible()
+        onboardingScreen.isLearningOnboardingImageVisible()
+        onboardingScreen.isPhoneOneIconVisible()
+        onboardingScreen.isLogHoursLabelVisible()
+        onboardingScreen.isRecordDriversVisible()
     }
     
     // MARK: 3rd Onboarding Screen
     func validateThirdOnboardingScreenElements() {
-        islearningOnboardingImage()
-        isPhoneTwoIconVisible()
-        isApproveDriversLabelVisible()
-        isReviewLearnerTextVisible()
+        onboardingScreen.islearningOnboardingImage()
+        onboardingScreen.isPhoneTwoIconVisible()
+        onboardingScreen.isApproveDriversLabelVisible()
+        onboardingScreen.isReviewLearnerTextVisible()
     }
     
     // MARK: 4th Onboarding Screen
     func validateFourthOnboardingScreenElements() {
-        isUserSupervisorOnboardingImageVisible()
-        isPhoneThreeIconVisible()
-        isTrackProgressVisible()
-        isSeeDriveProgressVisible()
+        onboardingScreen.isUserSupervisorOnboardingImageVisible()
+        onboardingScreen.isPhoneThreeIconVisible()
+        onboardingScreen.isTrackProgressVisible()
+        onboardingScreen.isSeeDriveProgressVisible()
     }
     
     // MARK: 5th Onboarding Screen
     func validateFivethOnboardingScreenElements() {
-        isUserLearnerOnboardingImage()
-        isPhoneSixIconVisible()
-        isLearnTogetherVisible()
-        isGetRoadSafetyTipsVisible()
+        onboardingScreen.isUserLearnerOnboardingImage()
+        onboardingScreen.isPhoneSixIconVisible()
+        onboardingScreen.isLearnTogetherVisible()
+        onboardingScreen.isGetRoadSafetyTipsVisible()
     }
     
     func tapSkipButton() {
-        tapOnSkipButton()
+        onboardingScreen.tapOnSkipButton()
+    }
+    
+    func tapOnDoneButton() {
+        onboardingScreen.isDoneButtonVisible()
+        onboardingScreen.tapOnDoneButton()
     }
     
     func assertOnboardingScreen() {
-        assertPagedScreens { page in
+        onboardingScreen.assertPagedScreens { page in
             switch page {
             case 1:
                 validateFirstOnboardingScreenElements()

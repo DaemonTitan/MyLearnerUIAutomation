@@ -6,12 +6,36 @@
 //
 
 import Foundation
+import XCTest
 
 
 class LoginSignUpTest: BaseTest {
     
-    let loginSteps = LoginSteps()
     let userAccount = Users()
+    let loginSteps = LoginSteps()
+    let pinSteps = PinSteps()
+    
+    override func setUpWithError() throws {
+        let myLearnerApp = XCUIApplication(bundleIdentifier: "au.gov.vic.vicroads.dlk")
+        myLearnerApp.launch()
+    }
+    
+    func test_Login_With_Supervisor() {
+        loginSteps.assertImages()
+        loginSteps.assertLabelsAndTexts()
+        loginSteps.enterUserName(email: userAccount.supervisor.userName)
+        loginSteps.enterPassword(password: userAccount.supervisor.password)
+        loginSteps.tapOnLoginButton()
+        pinSteps.assertCreatePinTextAndImage()
+        pinSteps.assertNumberPad()
+        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
+        pinSteps.tapOnDeleteButton(digits: 5)
+        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+        pinSteps.assertConfirmPinTextAndImage()
+        pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
+        pinSteps.tapOnDeleteButton(digits: 5)
+        pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+    }
     
     func test_Login_Without_Email_And_Password() {
         loginSteps.tapOnLoginButton()
@@ -58,11 +82,5 @@ class LoginSignUpTest: BaseTest {
         loginSteps.assertLabelsAndTexts()
     }
     
-    func test_Login() {
-        loginSteps.assertImages()
-        loginSteps.assertLabelsAndTexts()
-        loginSteps.enterUserName(email: userAccount.supervisor.userName)
-        loginSteps.enterPassword(password: userAccount.supervisor.password)
-        loginSteps.tapOnLoginButton()
-    }
+
 }

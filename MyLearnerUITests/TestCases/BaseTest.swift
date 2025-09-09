@@ -15,10 +15,6 @@ class BaseTest: XCTestCase {
     
     override func setUpWithError() throws {
         continueAfterFailure = false
-        
-        let myLearnerApp = XCUIApplication(bundleIdentifier: "au.gov.vic.vicroads.dlk")
-        myLearnerApp.launch()
-        
 //        installApp.searchAppFromAppStore()
 //        installApp.downloadApp()
 //        installApp.openApp()
