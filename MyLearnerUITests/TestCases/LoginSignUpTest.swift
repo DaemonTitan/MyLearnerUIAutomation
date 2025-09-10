@@ -67,7 +67,7 @@ class LoginSignUpTest: XCTestCase {
         loginSteps.assertLabelsAndTexts()
     }
     
-    func test_yLogin_With_Supervisor_Have_Successful_Login() {
+    func test_yFirstTime_Login_With_Supervisor_Have_Successful_Login() {
         loginSteps.assertImages()
         loginSteps.assertLabelsAndTexts()
         loginSteps.enterUserName(email: userAccount.supervisor.userName)
@@ -84,5 +84,6 @@ class LoginSignUpTest: XCTestCase {
         pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
         notificationOnboardingSteps.assertImageAndText()
         notificationOnboardingSteps.tapOnEnableButton()
+        notificationOnboardingSteps.tapOnAllowButton()
     }
 }

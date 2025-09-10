@@ -25,4 +25,16 @@ class NotificationOnboardingSteps {
         notificationOnboardingScreen.isNotNowButtonVisible()
         notificationOnboardingScreen.tapOnNotNowButton()
     }
+    
+    func tapOnAllowButton() {
+        if notificationOnboardingScreen.isAllowButtonVisible() {
+            notificationOnboardingScreen.tapOnAllowButton()
+        }
+    }
+    
+    func tapOnDontAllowButton() {
+        if notificationOnboardingScreen.isNotAllowButtonVisible() {
+            notificationOnboardingScreen.tapOnDontAllowButton()
+        }
+    }
 }
