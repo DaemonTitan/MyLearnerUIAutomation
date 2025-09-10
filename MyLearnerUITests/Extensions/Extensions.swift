@@ -14,10 +14,6 @@ extension XCUIElement {
         XCTAssertEqual(self.label, text, "\(self.label) doesn't match give text: \(text)")
     }
     
-//    func textMatches(_ text: String) {
-//        XCTAssertEqual(self.value as? String, text, "Page indicator value '\(self.description)' doesn't match give text '\(text)'")
-//    }
-    
     func textMatches(_ actual: @autoclosure () -> String?,  expected: String) {
         XCTAssertEqual(actual() ?? "", expected, "\(self) doesn't match give text: \(expected)")
     }
@@ -27,6 +23,10 @@ extension XCUIElement {
             XCTFail("\(self.description) is not presented")
             return
         }
+    }
+    
+    func isDisplayed() -> Bool {
+        return self.waitForExistence(timeout: BaseScreen.visibleTimeOut)
     }
     
     func waitUntilItemVisible() {

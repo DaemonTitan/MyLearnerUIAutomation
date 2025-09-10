@@ -49,6 +49,44 @@ internal enum L10n {
     /// com.apple.springboard
     internal static let springBoard = L10n.tr("Localizable", "boundleId.springBoard", fallback: "com.apple.springboard")
   }
+  internal enum HomeScreen {
+    /// Access your digital licence or learner permit anytime in the myVicRoads app.
+    internal static let bannerBody = L10n.tr("Localizable", "homeScreen.bannerBody", fallback: "Access your digital licence or learner permit anytime in the myVicRoads app.")
+    /// bannerCross
+    internal static let bannerCrossButton = L10n.tr("Localizable", "homeScreen.bannerCrossButton", fallback: "bannerCross")
+    /// Digital driver licences are now available for Ls and Ps!
+    internal static let bannerTitle = L10n.tr("Localizable", "homeScreen.bannerTitle", fallback: "Digital driver licences are now available for Ls and Ps!")
+    /// greenCross
+    internal static let crossButton = L10n.tr("Localizable", "homeScreen.crossButton", fallback: "greenCross")
+    /// Dashboard
+    internal static let dashboardTab = L10n.tr("Localizable", "homeScreen.dashboardTab", fallback: "Dashboard")
+    /// Download now
+    internal static let downloadNowButton = L10n.tr("Localizable", "homeScreen.downloadNowButton", fallback: "Download now")
+    /// HERE ARE YOUR TOTALS
+    internal static let driveDetailTitle = L10n.tr("Localizable", "homeScreen.driveDetailTitle", fallback: "HERE ARE YOUR TOTALS")
+    /// Drives in the past seven days
+    internal static let driveIn7Days = L10n.tr("Localizable", "homeScreen.driveIn7Days", fallback: "Drives in the past seven days")
+    /// Drives
+    internal static let drivesTab = L10n.tr("Localizable", "homeScreen.drivesTab", fallback: "Drives")
+    /// Hi %@
+    internal static func hiText(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "homeScreen.hiText", String(describing: p1), fallback: "Hi %@")
+    }
+    /// Get tips, advice and more to help coach your learner.
+    internal static let instructionsText = L10n.tr("Localizable", "homeScreen.instructionsText", fallback: "Get tips, advice and more to help coach your learner.")
+    /// Learners
+    internal static let learnersTab = L10n.tr("Localizable", "homeScreen.learnersTab", fallback: "Learners")
+    /// More
+    internal static let moreTab = L10n.tr("Localizable", "homeScreen.moreTab", fallback: "More")
+    /// My Teaching
+    internal static let myTeachingTab = L10n.tr("Localizable", "homeScreen.myTeachingTab", fallback: "My Teaching")
+    /// 'Learners you coach
+    internal static let numOfLearners = L10n.tr("Localizable", "homeScreen.numOfLearners", fallback: "'Learners you coach")
+    /// Read More
+    internal static let readMoreLabel = L10n.tr("Localizable", "homeScreen.readMoreLabel", fallback: "Read More")
+    /// Drives you need to verify
+    internal static let verifiedDrive = L10n.tr("Localizable", "homeScreen.verifiedDrive", fallback: "Drives you need to verify")
+  }
   internal enum Login {
     /// By tapping Log in, I agree to VicRoads
     internal static let agreeToVicRoadsText = L10n.tr("Localizable", "login.agreeToVicRoadsText", fallback: "By tapping Log in, I agree to VicRoads")
@@ -196,6 +234,12 @@ internal enum L10n {
     internal static let deleteAppButton = L10n.tr("Localizable", "springboard.deleteAppButton", fallback: "Delete App")
     /// Remove App
     internal static let removeAppButton = L10n.tr("Localizable", "springboard.removeAppButton", fallback: "Remove App")
+  }
+  internal enum SystemAlert {
+    /// Allow
+    internal static let allowButton = L10n.tr("Localizable", "systemAlert.allowButton", fallback: "Allow")
+    /// Don't Allow
+    internal static let dontAllow = L10n.tr("Localizable", "systemAlert.dontAllow", fallback: "Don't Allow")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

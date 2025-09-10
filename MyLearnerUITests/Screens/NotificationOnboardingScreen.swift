@@ -8,33 +8,58 @@
 import Foundation
 
 class NotificationOnboardingScreen: BaseScreen {
-        
-    private let notificationOnboardingImage = myLearnerApp.images[L10n.NotificationOnboarding.image]
-    private let notificationOnboardingInstruction = myLearnerApp.staticTexts[L10n.NotificationOnboarding.instruction]
-    private let enableNotificationButton = myLearnerApp.buttons[L10n.NotificationOnboarding.enableButton]
-    private let notNowButton = myLearnerApp.buttons[L10n.NotificationOnboarding.notNowButton]
+    
+    enum TextAndImage {
+        static let notificationOnboardingImage = myLearnerApp.images[L10n.NotificationOnboarding.image]
+        static let notificationOnboardingInstruction = myLearnerApp.staticTexts[L10n.NotificationOnboarding.instruction]
+    }
+    
+    enum Buttons {
+        static let enableNotificationButton = myLearnerApp.buttons[L10n.NotificationOnboarding.enableButton]
+        static let notNowButton = myLearnerApp.buttons[L10n.NotificationOnboarding.notNowButton]
+        static let allowButton = springboard.alerts.buttons[L10n.SystemAlert.allowButton]
+        static let dontAllowButton = springboard.alerts.buttons[L10n.SystemAlert.dontAllow]
+    }
+
     
     func isNotificationOnboardingImageVisible() {
-        notificationOnboardingImage.isVisible()
+        TextAndImage.notificationOnboardingImage.isVisible()
     }
     
     func isNotificationOnboardingInstructionVisible() {
-        notificationOnboardingInstruction.isVisible()
+        TextAndImage.notificationOnboardingInstruction.isVisible()
     }
     
     func isEnableNotificationButtonVisible() {
-        enableNotificationButton.isVisible()
+        Buttons.enableNotificationButton.isVisible()
     }
     
     func isNotNowButtonVisible() {
-        notNowButton.isVisible()
+        Buttons.notNowButton.isVisible()
     }
     
     func tapOnEnableNotificationButton() {
-        enableNotificationButton.tap()
+        Buttons.enableNotificationButton.tap()
     }
     
     func tapOnNotNowButton() {
-        notNowButton.isVisible()
+        Buttons.notNowButton.isVisible()
+    }
+    
+    func isAllowButtonVisible() -> Bool {
+        return Buttons.allowButton.isDisplayed()
+    }
+    
+    func isNotAllowButtonVisible() -> Bool {
+        return Buttons.dontAllowButton.isDisplayed()
+    }
+    
+    func tapOnAllowButton() {
+            Buttons.allowButton.tap()
+
+    }
+    
+    func tapOnDontAllowButton() {
+            Buttons.dontAllowButton.tap()
     }
 }

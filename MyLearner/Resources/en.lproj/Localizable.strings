@@ -21,6 +21,10 @@
 "appStore.redownloadButton" = "re-download";
 "appStore.openButton" = "Open";
 
+// Notification
+"systemAlert.allowButton" = "Allow";
+"systemAlert.dontAllow" = "Don't Allow";
+
 // Springboard
 "springboard.appIcon" = "myLearners";
 "springboard.removeAppButton" = "Remove App";
@@ -110,5 +114,28 @@
 "NotificationOnboarding.instruction" = "Using notifications informs when you get invitations as well as showing you the verified status of your drives.";
 "NotificationOnboarding.enableButton" = "Enable notifications";
 "NotificationOnboarding.notNowButton" = "Not now";
+
+// Home Screen
+"homeScreen.readMoreLabel" = "Read More";
+"homeScreen.instructionsText" = "Get tips, advice and more to help coach your learner.";
+"homeScreen.crossButton" = "greenCross";
+
+"homeScreen.bannerCrossButton" = "bannerCross";
+"homeScreen.bannerTitle" = "Digital driver licences are now available for Ls and Ps!";
+"homeScreen.bannerBody" = "Access your digital licence or learner permit anytime in the myVicRoads app.";
+"homeScreen.downloadNowButton" = "Download now";
+
+"homeScreen.hiText" = "Hi %@";
+
+"homeScreen.driveDetailTitle" = "HERE ARE YOUR TOTALS";
+"homeScreen.verifiedDrive" = "Drives you need to verify";
+"homeScreen.numOfLearners" = "'Learners you coach";
+"homeScreen.driveIn7Days" = "Drives in the past seven days";
+
+"homeScreen.dashboardTab" = "Dashboard";
+"homeScreen.drivesTab" = "Drives";
+"homeScreen.myTeachingTab" = "My Teaching";
+"homeScreen.learnersTab" = "Learners";
+"homeScreen.moreTab" = "More";
 
 //"." = "";
