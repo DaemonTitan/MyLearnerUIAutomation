@@ -11,10 +11,11 @@ import XCTest
 
 class LoginSignUpTest: XCTestCase {
     
+    let baseTest = BaseTest()
     let userAccount = Users()
     let loginSteps = LoginSteps()
     let pinSteps = PinSteps()
-    let baseTest = BaseTest()
+    let notificationOnboardingSteps = NotificationOnboardingSteps()
     
     override func setUpWithError() throws {
         continueAfterFailure = false
@@ -81,5 +82,7 @@ class LoginSignUpTest: XCTestCase {
         pinSteps.tapOnPin(pin: userAccount.supervisor.incorrectPin)
         pinSteps.tapOnDeleteButton(digits: 5)
         pinSteps.tapOnPin(pin: userAccount.supervisor.pin)
+        notificationOnboardingSteps.assertImageAndText()
+        notificationOnboardingSteps.tapOnEnableButton()
     }
 }

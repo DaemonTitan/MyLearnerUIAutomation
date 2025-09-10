@@ -10,6 +10,16 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum NotificationOnboarding {
+    /// Enable notifications
+    internal static let enableButton = L10n.tr("Localizable", "NotificationOnboarding.enableButton", fallback: "Enable notifications")
+    /// graphicNotificationOnboarding
+    internal static let image = L10n.tr("Localizable", "NotificationOnboarding.Image", fallback: "graphicNotificationOnboarding")
+    /// Using notifications informs when you get invitations as well as showing you the verified status of your drives.
+    internal static let instruction = L10n.tr("Localizable", "NotificationOnboarding.instruction", fallback: "Using notifications informs when you get invitations as well as showing you the verified status of your drives.")
+    /// Not now
+    internal static let notNowButton = L10n.tr("Localizable", "NotificationOnboarding.notNowButton", fallback: "Not now")
+  }
   internal enum AppStore {
     /// myLearners, VicRoads Official Learning App
     internal static let appButton = L10n.tr("Localizable", "appStore.appButton", fallback: "myLearners, VicRoads Official Learning App")
