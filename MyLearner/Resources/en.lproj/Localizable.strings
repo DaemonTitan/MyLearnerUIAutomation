@@ -105,4 +105,10 @@
 "pin.cancelButton" = "Cancel";
 "pin.alertLogoutButton" = "Log out";
 
+// Enable Notification Screen
+"NotificationOnboarding.Image" = "graphicNotificationOnboarding";
+"NotificationOnboarding.instruction" = "Using notifications informs when you get invitations as well as showing you the verified status of your drives.";
+"NotificationOnboarding.enableButton" = "Enable notifications";
+"NotificationOnboarding.notNowButton" = "Not now";
+
 //"." = "";
