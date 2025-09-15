@@ -296,6 +296,8 @@ internal enum L10n {
     internal static let moreTab = L10n.tr("Localizable", "tabBar.moreTab", fallback: "More")
     /// My Teaching
     internal static let myTeachingTab = L10n.tr("Localizable", "tabBar.myTeachingTab", fallback: "My Teaching")
+    /// Tab Bar
+    internal static let tabbar = L10n.tr("Localizable", "tabBar.tabbar", fallback: "Tab Bar")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
