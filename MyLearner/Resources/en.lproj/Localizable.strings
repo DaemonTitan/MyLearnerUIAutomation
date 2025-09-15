@@ -10,6 +10,7 @@
 "boundleId.appStore" = "com.apple.AppStore";
 "boundleId.springBoard" = "com.apple.springboard";
 "boundleId.mylearner" = "au.gov.vic.vicroads.dlk";
+"boundleId.safari" = "com.apple.mobilesafari";
 
 // App Store
 "appStore.searchButton" = "Search";
@@ -20,6 +21,9 @@
 "appStore.getButton" = "Get";
 "appStore.redownloadButton" = "re-download";
 "appStore.openButton" = "Open";
+
+// Safari
+"safari.addressField" = "Address";
 
 // Notification
 "systemAlert.allowButton" = "Allow";
@@ -115,6 +119,13 @@
 "NotificationOnboarding.enableButton" = "Enable notifications";
 "NotificationOnboarding.notNowButton" = "Not now";
 
+// Tab Bar
+"tabBar.dashboardTab" = "Dashboard";
+"tabBar.drivesTab" = "Drives";
+"tabBar.myTeachingTab" = "My Teaching";
+"tabBar.learnersTab" = "Learners";
+"tabBar.moreTab" = "More";
+
 // Home Screen
 "homeScreen.readMoreLabel" = "Read More";
 "homeScreen.instructionsText" = "Get tips, advice and more to help coach your learner.";
@@ -132,10 +143,29 @@
 "homeScreen.numOfLearners" = "'Learners you coach";
 "homeScreen.driveIn7Days" = "Drives in the past seven days";
 
-"homeScreen.dashboardTab" = "Dashboard";
-"homeScreen.drivesTab" = "Drives";
-"homeScreen.myTeachingTab" = "My Teaching";
-"homeScreen.learnersTab" = "Learners";
-"homeScreen.moreTab" = "More";
+// Setting Screen
+"moreScreen.logoutButton" = "logout";
+"moreScreen.MoreTitle" = "More";
+"moreScreen.settingSectionTitle" = "SETTINGS";
+"moreScreen.notificationSettingTitle" = "Your notifications are on";
+"moreScreen.notificationSettingBody" = "Turn notifications off in your phone's settings.";
+"moreScreen.updateProfileButton" = "more_support_button_update_profile";
+"moreScreen.updateProfileText" = "Update profile and settings";
+"moreScreen.resourcesSectionTitle" = "RESOURCES";
+"moreScreen.viewTutorialButton" = "View tutorial";
+"moreScreen.submitDriveButton" = "more_button_submit_manual_trip";
+"moreScreen.submitDriveTitle" = "Submit a drive manually";
+"moreScreen.submitDriveBody" = "Go to your myVicRoads account.";
+"moreScreen.supportFeedbackSectionTitle" = "SUPPORT AND FEEDBACK";
+"moreScreen.helpAndSupportButton" = "more_button_help_&_support";
+"moreScreen.helpAndSupportTitle" = "Help and Support";
+"moreScreen.feedbackButton" = "more_button_feedback";
+"moreScreen.feedbackTitle" = "Provide Feedback";
+"moreScreen.accountManagementSectionTitle" = "ACCOUNT MANAGEMENT";
+"moreScreen.deactiveAccountButton" = "more_button_help_&_support";
+"moreScreen.deactiveAccountTitle" = "Deactivate account";
+"moreScreen.appVersion" = "App version: %@";
+"moreScreen.myVicRoadsLogInScreen" = "Log into myVicRoads";
+
 
 //"." = "";
