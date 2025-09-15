@@ -120,6 +120,7 @@
 "NotificationOnboarding.notNowButton" = "Not now";
 
 // Tab Bar
+"tabBar.tabbar" = "Tab Bar";
 "tabBar.dashboardTab" = "Dashboard";
 "tabBar.drivesTab" = "Drives";
 "tabBar.myTeachingTab" = "My Teaching";

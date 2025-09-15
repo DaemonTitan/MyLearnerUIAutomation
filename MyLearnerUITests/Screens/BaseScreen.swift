@@ -18,4 +18,10 @@ class BaseScreen {
     static let springboard = XCUIApplication(bundleIdentifier: L10n.BoundleId.springBoard)
     static let myLearnerApp = XCUIApplication(bundleIdentifier: L10n.BoundleId.mylearner)
     static let safari = XCUIApplication(bundleIdentifier: L10n.BoundleId.safari)
+    
+    static let tabBar = myLearnerApp.tabBars[L10n.TabBar.tabbar]
+    
+    static func backToMyLearnerApp() {
+        myLearnerApp.activate()
+    }
 }
