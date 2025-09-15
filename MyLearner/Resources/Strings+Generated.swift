@@ -46,6 +46,8 @@ internal enum L10n {
     internal static let appStore = L10n.tr("Localizable", "boundleId.appStore", fallback: "com.apple.AppStore")
     /// au.gov.vic.vicroads.dlk
     internal static let mylearner = L10n.tr("Localizable", "boundleId.mylearner", fallback: "au.gov.vic.vicroads.dlk")
+    /// com.apple.mobilesafari
+    internal static let safari = L10n.tr("Localizable", "boundleId.safari", fallback: "com.apple.mobilesafari")
     /// com.apple.springboard
     internal static let springBoard = L10n.tr("Localizable", "boundleId.springBoard", fallback: "com.apple.springboard")
   }
@@ -58,28 +60,18 @@ internal enum L10n {
     internal static let bannerTitle = L10n.tr("Localizable", "homeScreen.bannerTitle", fallback: "Digital driver licences are now available for Ls and Ps!")
     /// greenCross
     internal static let crossButton = L10n.tr("Localizable", "homeScreen.crossButton", fallback: "greenCross")
-    /// Dashboard
-    internal static let dashboardTab = L10n.tr("Localizable", "homeScreen.dashboardTab", fallback: "Dashboard")
     /// Download now
     internal static let downloadNowButton = L10n.tr("Localizable", "homeScreen.downloadNowButton", fallback: "Download now")
     /// HERE ARE YOUR TOTALS
     internal static let driveDetailTitle = L10n.tr("Localizable", "homeScreen.driveDetailTitle", fallback: "HERE ARE YOUR TOTALS")
     /// Drives in the past seven days
     internal static let driveIn7Days = L10n.tr("Localizable", "homeScreen.driveIn7Days", fallback: "Drives in the past seven days")
-    /// Drives
-    internal static let drivesTab = L10n.tr("Localizable", "homeScreen.drivesTab", fallback: "Drives")
     /// Hi %@
     internal static func hiText(_ p1: Any) -> String {
       return L10n.tr("Localizable", "homeScreen.hiText", String(describing: p1), fallback: "Hi %@")
     }
     /// Get tips, advice and more to help coach your learner.
     internal static let instructionsText = L10n.tr("Localizable", "homeScreen.instructionsText", fallback: "Get tips, advice and more to help coach your learner.")
-    /// Learners
-    internal static let learnersTab = L10n.tr("Localizable", "homeScreen.learnersTab", fallback: "Learners")
-    /// More
-    internal static let moreTab = L10n.tr("Localizable", "homeScreen.moreTab", fallback: "More")
-    /// My Teaching
-    internal static let myTeachingTab = L10n.tr("Localizable", "homeScreen.myTeachingTab", fallback: "My Teaching")
     /// 'Learners you coach
     internal static let numOfLearners = L10n.tr("Localizable", "homeScreen.numOfLearners", fallback: "'Learners you coach")
     /// Read More
@@ -132,6 +124,54 @@ internal enum L10n {
     internal static let buttonNotFound = L10n.tr("Localizable", "messages.buttonNotFound", fallback: "Button not found")
     /// Can't locate app in App Store
     internal static let cantLocateApp = L10n.tr("Localizable", "messages.cantLocateApp", fallback: "Can't locate app in App Store")
+  }
+  internal enum MoreScreen {
+    /// ACCOUNT MANAGEMENT
+    internal static let accountManagementSectionTitle = L10n.tr("Localizable", "moreScreen.accountManagementSectionTitle", fallback: "ACCOUNT MANAGEMENT")
+    /// App version: %@
+    internal static func appVersion(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "moreScreen.appVersion", String(describing: p1), fallback: "App version: %@")
+    }
+    /// more_button_help_&_support
+    internal static let deactiveAccountButton = L10n.tr("Localizable", "moreScreen.deactiveAccountButton", fallback: "more_button_help_&_support")
+    /// Deactivate account
+    internal static let deactiveAccountTitle = L10n.tr("Localizable", "moreScreen.deactiveAccountTitle", fallback: "Deactivate account")
+    /// more_button_feedback
+    internal static let feedbackButton = L10n.tr("Localizable", "moreScreen.feedbackButton", fallback: "more_button_feedback")
+    /// Provide Feedback
+    internal static let feedbackTitle = L10n.tr("Localizable", "moreScreen.feedbackTitle", fallback: "Provide Feedback")
+    /// more_button_help_&_support
+    internal static let helpAndSupportButton = L10n.tr("Localizable", "moreScreen.helpAndSupportButton", fallback: "more_button_help_&_support")
+    /// Help and Support
+    internal static let helpAndSupportTitle = L10n.tr("Localizable", "moreScreen.helpAndSupportTitle", fallback: "Help and Support")
+    /// logout
+    internal static let logoutButton = L10n.tr("Localizable", "moreScreen.logoutButton", fallback: "logout")
+    /// More
+    internal static let moreTitle = L10n.tr("Localizable", "moreScreen.MoreTitle", fallback: "More")
+    /// Log into myVicRoads
+    internal static let myVicRoadsLogInScreen = L10n.tr("Localizable", "moreScreen.myVicRoadsLogInScreen", fallback: "Log into myVicRoads")
+    /// Turn notifications off in your phone's settings.
+    internal static let notificationSettingBody = L10n.tr("Localizable", "moreScreen.notificationSettingBody", fallback: "Turn notifications off in your phone's settings.")
+    /// Your notifications are on
+    internal static let notificationSettingTitle = L10n.tr("Localizable", "moreScreen.notificationSettingTitle", fallback: "Your notifications are on")
+    /// RESOURCES
+    internal static let resourcesSectionTitle = L10n.tr("Localizable", "moreScreen.resourcesSectionTitle", fallback: "RESOURCES")
+    /// SETTINGS
+    internal static let settingSectionTitle = L10n.tr("Localizable", "moreScreen.settingSectionTitle", fallback: "SETTINGS")
+    /// Go to your myVicRoads account.
+    internal static let submitDriveBody = L10n.tr("Localizable", "moreScreen.submitDriveBody", fallback: "Go to your myVicRoads account.")
+    /// more_button_submit_manual_trip
+    internal static let submitDriveButton = L10n.tr("Localizable", "moreScreen.submitDriveButton", fallback: "more_button_submit_manual_trip")
+    /// Submit a drive manually
+    internal static let submitDriveTitle = L10n.tr("Localizable", "moreScreen.submitDriveTitle", fallback: "Submit a drive manually")
+    /// SUPPORT AND FEEDBACK
+    internal static let supportFeedbackSectionTitle = L10n.tr("Localizable", "moreScreen.supportFeedbackSectionTitle", fallback: "SUPPORT AND FEEDBACK")
+    /// more_support_button_update_profile
+    internal static let updateProfileButton = L10n.tr("Localizable", "moreScreen.updateProfileButton", fallback: "more_support_button_update_profile")
+    /// Update profile and settings
+    internal static let updateProfileText = L10n.tr("Localizable", "moreScreen.updateProfileText", fallback: "Update profile and settings")
+    /// View tutorial
+    internal static let viewTutorialButton = L10n.tr("Localizable", "moreScreen.viewTutorialButton", fallback: "View tutorial")
   }
   internal enum Onboarding {
     /// Done
@@ -225,6 +265,10 @@ internal enum L10n {
     /// logout
     internal static let signOutButton = L10n.tr("Localizable", "pin.SignOutButton", fallback: "logout")
   }
+  internal enum Safari {
+    /// Address
+    internal static let addressField = L10n.tr("Localizable", "safari.addressField", fallback: "Address")
+  }
   internal enum Springboard {
     /// myLearners
     internal static let appIcon = L10n.tr("Localizable", "springboard.appIcon", fallback: "myLearners")
@@ -240,6 +284,18 @@ internal enum L10n {
     internal static let allowButton = L10n.tr("Localizable", "systemAlert.allowButton", fallback: "Allow")
     /// Don't Allow
     internal static let dontAllow = L10n.tr("Localizable", "systemAlert.dontAllow", fallback: "Don't Allow")
+  }
+  internal enum TabBar {
+    /// Dashboard
+    internal static let dashboardTab = L10n.tr("Localizable", "tabBar.dashboardTab", fallback: "Dashboard")
+    /// Drives
+    internal static let drivesTab = L10n.tr("Localizable", "tabBar.drivesTab", fallback: "Drives")
+    /// Learners
+    internal static let learnersTab = L10n.tr("Localizable", "tabBar.learnersTab", fallback: "Learners")
+    /// More
+    internal static let moreTab = L10n.tr("Localizable", "tabBar.moreTab", fallback: "More")
+    /// My Teaching
+    internal static let myTeachingTab = L10n.tr("Localizable", "tabBar.myTeachingTab", fallback: "My Teaching")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

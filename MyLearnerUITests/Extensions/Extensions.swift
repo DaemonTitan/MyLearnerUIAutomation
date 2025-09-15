@@ -70,3 +70,12 @@ extension XCUIElement {
         element.swipeUp()
     }
 }
+
+extension XCUIApplication {
+    func waitUntilAppState(_ appState: XCUIApplication.State) {
+        guard self.wait(for: appState, timeout: BaseScreen.appTimeOut) else {
+            XCTFail("\(self.description) is not presented")
+            return
+        }
+    }
+}

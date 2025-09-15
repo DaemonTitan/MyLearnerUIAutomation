@@ -8,6 +8,8 @@
 import Foundation
 import XCTest
 
-class BaseTest: BaseScreen {
-    let myLearnerApp = myLearnerApp
+class BaseTest: XCTestCase {
+    
+    let baseScreen = BaseScreen()
+    let myLearnerApp = BaseScreen.myLearnerApp
 }
