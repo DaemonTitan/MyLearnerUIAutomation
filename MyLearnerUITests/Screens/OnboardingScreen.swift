@@ -50,21 +50,22 @@ class OnboardingScreen: BaseScreen {
     enum Buttons {
         static let skipButton = myLearnerApp.buttons[L10n.Onboarding.skipButton]
         static let doneButton = myLearnerApp.buttons[L10n.Onboarding.doneButton]
+        static let closeButton = myLearnerApp.buttons[L10n.Onboarding.closeButton]
     }
     
     let pageIndicator = myLearnerApp.pageIndicators.firstMatch
     
     
     // MARK: Buttons, Page Indicator and Swip Actions
-    func assertPagedScreens(assertForPage: (Int) -> Void) {
+    func assertPagedScreens(totalPage: Int, assertForPage: (Int) -> Void) {
         let initalPage = 1
-        let totalPage = 5
+        let totalPage = totalPage
         pageIndicator.isVisible()
 
         for currentPage in initalPage...totalPage {
             //pageIndicator.textMatches(L10n.Onboarding.pageIndicator(currentPage))
-            pageIndicator.textMatches(pageIndicator.value as? String, expected: L10n.Onboarding.pageIndicator(currentPage))
-
+            pageIndicator.textMatches(pageIndicator.value as? String, expected: L10n.Onboarding.pageIndicator(currentPage, totalPage))
+            
             if currentPage < totalPage {
                 pageIndicator.swipeLeft()
             }
@@ -171,5 +172,14 @@ class OnboardingScreen: BaseScreen {
     
     func isGetRoadSafetyTipsVisible() {
         Labels.getRoadSafetyTips.isVisible()
+    }
+    
+    // MARK: View Tutorial From More Screen
+    func isCloseButtonVisible() {
+        Buttons.closeButton.isVisible()
+    }
+    
+    func tapOnCloseButton() {
+        Buttons.closeButton.tap()
     }
 }

@@ -25,4 +25,9 @@ class SafariScreen: BaseScreen {
         addresssBar.tap()
         addresssBar.textMatches(addresssBar.value as? String, expected: URLs.myVicRoadsLoginPage)
     }
+    
+    func isSafariOpenSubmitDriveManuallyPage() {
+        addresssBar.tap()
+        addresssBar.textMatches(addresssBar.value as? String, expected: URLs.submitDriveManuallyPage)
+    }
 }

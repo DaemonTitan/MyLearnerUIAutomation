@@ -62,7 +62,7 @@ class OnboardingSteps {
     }
     
     func assertEachOnboardingScreen() {
-        onboardingScreen.assertPagedScreens { page in
+        onboardingScreen.assertPagedScreens(totalPage: 5) { page in
             switch page {
             case 1:
                 validateFirstOnboardingScreenElements()
@@ -80,5 +80,31 @@ class OnboardingSteps {
         }
     }
     
+    // MARK: View Tutorial From More Screen
+    func tapOnCloseButton() {
+        onboardingScreen.isCloseButtonVisible()
+        onboardingScreen.tapOnCloseButton()
+    }
+    
+    func assertEachTutorialScreen() {
+        onboardingScreen.assertPagedScreens(totalPage: 4) { page in
+            switch page {
+            case 1:
+                validateSecondOnboardingScreenElements()
+                onboardingScreen.isCloseButtonVisible()
+            case 2:
+                validateThirdOnboardingScreenElements()
+                onboardingScreen.isCloseButtonVisible()
+            case 3:
+                validateFourthOnboardingScreenElements()
+                onboardingScreen.isCloseButtonVisible()
+            case 4:
+                validateFivethOnboardingScreenElements()
+                onboardingScreen.isCloseButtonVisible()
+            default:
+                print("Error")
+            }
+        }
+    }
 }
 

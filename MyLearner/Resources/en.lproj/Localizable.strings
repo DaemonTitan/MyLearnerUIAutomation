@@ -72,9 +72,10 @@
 // Onboarding Buttons
 "onboarding.skipButton" = "Skip";
 "onboarding.doneButton" = "Done";
+"onboarding.closeButton" = "Close";
 
 // Onboarding Page Indicators
-"onboarding.pageIndicator" = "page %d of 5";
+"onboarding.pageIndicator" = "page %d of %d";
 
 // Login Screen
 "login.backgoundImage" = "landingIllustrationBackground";
@@ -167,6 +168,5 @@
 "moreScreen.deactiveAccountTitle" = "Deactivate account";
 "moreScreen.appVersion" = "App version: %@";
 "moreScreen.myVicRoadsLogInScreen" = "Log into myVicRoads";
-
 
 //"." = "";

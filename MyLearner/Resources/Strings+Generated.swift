@@ -174,11 +174,13 @@ internal enum L10n {
     internal static let viewTutorialButton = L10n.tr("Localizable", "moreScreen.viewTutorialButton", fallback: "View tutorial")
   }
   internal enum Onboarding {
+    /// Close
+    internal static let closeButton = L10n.tr("Localizable", "onboarding.closeButton", fallback: "Close")
     /// Done
     internal static let doneButton = L10n.tr("Localizable", "onboarding.doneButton", fallback: "Done")
-    /// page %d of 5
-    internal static func pageIndicator(_ p1: Int) -> String {
-      return L10n.tr("Localizable", "onboarding.pageIndicator", p1, fallback: "page %d of 5")
+    /// page %d of %d
+    internal static func pageIndicator(_ p1: Int, _ p2: Int) -> String {
+      return L10n.tr("Localizable", "onboarding.pageIndicator", p1, p2, fallback: "page %d of %d")
     }
     /// Skip
     internal static let skipButton = L10n.tr("Localizable", "onboarding.skipButton", fallback: "Skip")
