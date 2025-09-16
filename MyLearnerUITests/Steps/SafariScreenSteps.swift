@@ -19,4 +19,8 @@ class SafariScreenSteps {
         safariScreen.isMyVicRoadsPageVisible()
         safariScreen.isSafariOpenMyVicRoadsPage()
     }
+    
+    func assertSubmitDriveManuallyWebpageVisible() {
+        safariScreen.isSafariOpenSubmitDriveManuallyPage()
+    }
 }
